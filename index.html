@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PulseFuel Fitness</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="top-bar">
+        <div class="logo">
+          <span class="logo-mark">PF</span>
+          <div>
+            <p class="logo-title">PulseFuel</p>
+            <p class="logo-subtitle">Nutrition + Workout Studio</p>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">Dashboard</a>
+          <a href="meals.html">Meals</a>
+          <a href="#">Workouts</a>
+          <a href="#">Profile</a>
+        </nav>
+        <button class="ghost-button">Sign In</button>
+      </header>
+
+      <main class="content">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Minimal, precise, focused.</p>
+            <h1>
+              Capture meals. Track macros. <br />
+              Train by muscle group.
+            </h1>
+            <p class="hero-description">
+              Upload a meal photo to estimate calories, protein, and nutrients.
+              Pair it with guided workouts tailored to specific muscle groups.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-button" href="meals.html">Start Capture</a>
+              <button class="secondary-button">Explore Workouts</button>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="hero-card-top">
+              <p class="card-title">Today’s Summary</p>
+              <span class="status-pill">Active</span>
+            </div>
+            <div class="summary-grid">
+              <div>
+                <p class="summary-label">Calories</p>
+                <p class="summary-value">1,480</p>
+              </div>
+              <div>
+                <p class="summary-label">Protein</p>
+                <p class="summary-value">92g</p>
+              </div>
+              <div>
+                <p class="summary-label">Hydration</p>
+                <p class="summary-value">2.1L</p>
+              </div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar"></div>
+            </div>
+            <p class="progress-caption">72% of daily intake goal</p>
+          </div>
+        </section>
+
+        <section class="grid-section">
+          <div class="card capture-card">
+            <div class="card-header">
+              <h2>Capture a meal</h2>
+              <p>Upload a photo to begin macro and nutrient analysis.</p>
+            </div>
+            <div class="capture-frame">
+              <div class="capture-icon">📷</div>
+              <p>Drop image here or browse your device.</p>
+              <label class="upload-button">
+                Choose File
+                <input type="file" accept="image/*" />
+              </label>
+            </div>
+            <div class="capture-preview">
+              <div class="preview-image">
+                <span>Meal preview</span>
+              </div>
+              <div class="preview-meta">
+                <div>
+                  <p class="preview-title">Chicken Bowl</p>
+                  <p class="preview-sub">Awaiting analysis · 0 kcal logged</p>
+                </div>
+                <button class="secondary-button">Replace</button>
+              </div>
+            </div>
+            <div class="capture-actions">
+              <button class="primary-button">Analyze Meal</button>
+              <button class="ghost-button">View Library</button>
+            </div>
+          </div>
+
+          <div class="card macro-card">
+            <div class="card-header">
+              <h2>Macro targets</h2>
+              <p>Personalized intake goals for steady progress.</p>
+            </div>
+            <div class="macro-list">
+              <div class="macro-item">
+                <div>
+                  <p class="macro-title">Calories</p>
+                  <p class="macro-sub">2,050 kcal</p>
+                </div>
+                <span class="macro-chip">Remaining 570</span>
+              </div>
+              <div class="macro-item">
+                <div>
+                  <p class="macro-title">Protein</p>
+                  <p class="macro-sub">140 g</p>
+                </div>
+                <span class="macro-chip">Remaining 48</span>
+              </div>
+              <div class="macro-item">
+                <div>
+                  <p class="macro-title">Carbs</p>
+                  <p class="macro-sub">210 g</p>
+                </div>
+                <span class="macro-chip">Remaining 90</span>
+              </div>
+              <div class="macro-item">
+                <div>
+                  <p class="macro-title">Fats</p>
+                  <p class="macro-sub">65 g</p>
+                </div>
+                <span class="macro-chip">Remaining 18</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="grid-section">
+          <div class="card workout-card">
+            <div class="card-header">
+              <h2>Workouts by muscle group</h2>
+              <p>Select a focus area to see curated sessions.</p>
+            </div>
+            <div class="muscle-grid">
+              <button class="muscle-item">Chest</button>
+              <button class="muscle-item">Back</button>
+              <button class="muscle-item">Legs</button>
+              <button class="muscle-item">Shoulders</button>
+              <button class="muscle-item">Arms</button>
+              <button class="muscle-item">Core</button>
+            </div>
+            <div class="workout-highlight">
+              <div>
+                <p class="workout-title">Upper Strength Flow</p>
+                <p class="workout-sub">45 min · Strength · Moderate</p>
+              </div>
+              <button class="secondary-button">View Plan</button>
+            </div>
+          </div>
+
+          <div class="card nutrient-card">
+            <div class="card-header">
+              <h2>Nutrient insights</h2>
+              <p>Track micronutrients for balanced meals.</p>
+            </div>
+            <div class="nutrient-list">
+              <div class="nutrient-row">
+                <span>Fiber</span>
+                <span class="nutrient-pill">18 g</span>
+              </div>
+              <div class="nutrient-row">
+                <span>Iron</span>
+                <span class="nutrient-pill">12 mg</span>
+              </div>
+              <div class="nutrient-row">
+                <span>Calcium</span>
+                <span class="nutrient-pill">540 mg</span>
+              </div>
+              <div class="nutrient-row">
+                <span>Vitamin C</span>
+                <span class="nutrient-pill">65 mg</span>
+              </div>
+            </div>
+            <button class="ghost-button full-width">Review Nutrients</button>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
