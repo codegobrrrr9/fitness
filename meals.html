@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PulseFuel Meals</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="top-bar">
+        <div class="logo">
+          <span class="logo-mark">PF</span>
+          <div>
+            <p class="logo-title">PulseFuel</p>
+            <p class="logo-subtitle">Nutrition + Workout Studio</p>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">Dashboard</a>
+          <a href="meals.html" aria-current="page">Meals</a>
+          <a href="workouts.html">Workouts</a>
+          <a href="favorites.html">Favorites</a>
+          <a href="profile.html">Profile</a>
+        </nav>
+        <button class="ghost-button">Sync Meal Log</button>
+      </header>
+
+      <main class="content">
+        <section class="page-hero">
+          <div class="page-hero-copy">
+            <p class="eyebrow">Meals overview</p>
+            <h1>Meal details and nutrition intelligence.</h1>
+            <p class="hero-description">
+              Review captured meals, tag them for quick filters, and save
+              favorites. Curate collections and explore smart alternatives.
+            </p>
+            <div class="hero-actions">
+              <button class="primary-button">Capture New Meal</button>
+              <button class="secondary-button">View Favorites</button>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="hero-card-top">
+              <p class="card-title">Meal Summary</p>
+              <span class="status-pill">7 meals logged</span>
+            </div>
+            <div class="summary-grid">
+              <div>
+                <p class="summary-label">Avg Calories</p>
+                <p class="summary-value">430</p>
+              </div>
+              <div>
+                <p class="summary-label">Avg Protein</p>
+                <p class="summary-value">28g</p>
+              </div>
+              <div>
+                <p class="summary-label">Tags Used</p>
+                <p class="summary-value">12</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="grid-section meals-grid">
+          <div class="card meal-detail-card">
+            <div class="card-header">
+              <h2>Chicken harvest bowl</h2>
+              <p>Captured today · Lunch · 12:10 PM</p>
+            </div>
+            <div class="meal-detail">
+              <div class="meal-image">
+                <span>Meal image</span>
+              </div>
+              <div class="meal-metrics">
+                <div>
+                  <p class="summary-label">Calories</p>
+                  <p class="summary-value">520</p>
+                </div>
+                <div>
+                  <p class="summary-label">Protein</p>
+                  <p class="summary-value">42g</p>
+                </div>
+                <div>
+                  <p class="summary-label">Carbs</p>
+                  <p class="summary-value">48g</p>
+                </div>
+                <div>
+                  <p class="summary-label">Fats</p>
+                  <p class="summary-value">18g</p>
+                </div>
+              </div>
+            </div>
+            <div class="tag-row">
+              <span class="tag">High Protein</span>
+              <span class="tag">Post-Workout</span>
+              <span class="tag">Gluten Free</span>
+              <button class="tag add-tag">+ Add Tag</button>
+            </div>
+            <div class="meal-actions">
+              <button class="primary-button">Save to Favorites</button>
+              <button class="ghost-button">Add to Collection</button>
+            </div>
+          </div>
+
+          <div class="card favorites-card">
+            <div class="card-header">
+              <h2>Favorite meals</h2>
+              <p>Quick access to your most loved meals.</p>
+            </div>
+            <div class="favorites-list">
+              <div class="favorite-item">
+                <div>
+                  <p class="preview-title">Salmon quinoa plate</p>
+                  <p class="preview-sub">510 kcal · 38g protein</p>
+                </div>
+                <button class="ghost-button">Open</button>
+              </div>
+              <div class="favorite-item">
+                <div>
+                  <p class="preview-title">Turkey avocado wrap</p>
+                  <p class="preview-sub">390 kcal · 31g protein</p>
+                </div>
+                <button class="ghost-button">Open</button>
+              </div>
+              <div class="favorite-item">
+                <div>
+                  <p class="preview-title">Tofu stir fry</p>
+                  <p class="preview-sub">440 kcal · 24g protein</p>
+                </div>
+                <button class="ghost-button">Open</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="grid-section meals-grid">
+          <div class="card collections-card">
+            <div class="card-header">
+              <h2>Collections</h2>
+              <p>Group meals by goal, taste, or routine.</p>
+            </div>
+            <div class="collection-list">
+              <div class="collection-item">
+                <div>
+                  <p class="preview-title">Lean weekday lunches</p>
+                  <p class="preview-sub">8 meals · Avg 420 kcal</p>
+                </div>
+                <button class="secondary-button">View</button>
+              </div>
+              <div class="collection-item">
+                <div>
+                  <p class="preview-title">Recovery dinners</p>
+                  <p class="preview-sub">5 meals · Avg 560 kcal</p>
+                </div>
+                <button class="secondary-button">View</button>
+              </div>
+              <div class="collection-item">
+                <div>
+                  <p class="preview-title">Low-carb staples</p>
+                  <p class="preview-sub">6 meals · Avg 390 kcal</p>
+                </div>
+                <button class="secondary-button">View</button>
+              </div>
+            </div>
+            <button class="ghost-button full-width">Create Collection</button>
+          </div>
+
+          <div class="card suggestions-card">
+            <div class="card-header">
+              <h2>Meal alternatives</h2>
+              <p>Smart suggestions that align with your targets.</p>
+            </div>
+            <div class="suggestion-list">
+              <div class="suggestion-item">
+                <div>
+                  <p class="preview-title">Swap to grilled shrimp bowl</p>
+                  <p class="preview-sub">-120 kcal · +8g protein</p>
+                </div>
+                <button class="secondary-button">Preview</button>
+              </div>
+              <div class="suggestion-item">
+                <div>
+                  <p class="preview-title">Try cauliflower rice</p>
+                  <p class="preview-sub">-35g carbs · +3g fiber</p>
+                </div>
+                <button class="secondary-button">Preview</button>
+              </div>
+              <div class="suggestion-item">
+                <div>
+                  <p class="preview-title">Add greek yogurt side</p>
+                  <p class="preview-sub">+12g protein · +90 kcal</p>
+                </div>
+                <button class="secondary-button">Preview</button>
+              </div>
+            </div>
+            <button class="ghost-button full-width">Generate More</button>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PulseFuel Favorites</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="top-bar">
+        <div class="logo">
+          <span class="logo-mark">PF</span>
+          <div>
+            <p class="logo-title">PulseFuel</p>
+            <p class="logo-subtitle">Nutrition + Workout Studio</p>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">Dashboard</a>
+          <a href="meals.html">Meals</a>
+          <a href="workouts.html">Workouts</a>
+          <a href="favorites.html" aria-current="page">Favorites</a>
+          <a href="profile.html">Profile</a>
+        </nav>
+        <button class="ghost-button">Manage Favorites</button>
+      </header>
+
+      <main class="content">
+        <section class="page-hero">
+          <div class="page-hero-copy">
+            <p class="eyebrow">Favorites</p>
+            <h1>All of your saved meals and workouts.</h1>
+            <p class="hero-description">
+              Review the meals and videos you have starred for quick access and
+              planning.
+            </p>
+            <div class="hero-actions">
+              <button class="primary-button">Sort Favorites</button>
+              <a class="secondary-button" href="meals.html">Browse Meals</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="hero-card-top">
+              <p class="card-title">Saved Items</p>
+              <span class="status-pill">18 total</span>
+            </div>
+            <div class="summary-grid">
+              <div>
+                <p class="summary-label">Meals</p>
+                <p class="summary-value">9</p>
+              </div>
+              <div>
+                <p class="summary-label">Workouts</p>
+                <p class="summary-value">9</p>
+              </div>
+              <div>
+                <p class="summary-label">Collections</p>
+                <p class="summary-value">3</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="grid-section favorites-grid">
+          <div class="card">
+            <div class="card-header">
+              <h2>Favorite meals</h2>
+              <p>Meals you have saved for quick logging.</p>
+            </div>
+            <div class="favorites-list">
+              <div class="favorite-item">
+                <div>
+                  <p class="preview-title">Salmon quinoa plate</p>
+                  <p class="preview-sub">510 kcal · 38g protein</p>
+                </div>
+                <button class="ghost-button">Open</button>
+              </div>
+              <div class="favorite-item">
+                <div>
+                  <p class="preview-title">Turkey avocado wrap</p>
+                  <p class="preview-sub">390 kcal · 31g protein</p>
+                </div>
+                <button class="ghost-button">Open</button>
+              </div>
+              <div class="favorite-item">
+                <div>
+                  <p class="preview-title">Tofu stir fry</p>
+                  <p class="preview-sub">440 kcal · 24g protein</p>
+                </div>
+                <button class="ghost-button">Open</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h2>Favorite workout videos</h2>
+              <p>Revisit your most saved sessions.</p>
+            </div>
+            <div class="favorite-videos">
+              <div class="video-card">
+                <div class="video-thumb">
+                  <span>Video</span>
+                </div>
+                <div class="video-meta">
+                  <div>
+                    <p class="preview-title">Upper body burner</p>
+                    <p class="preview-sub">28 min · Strength</p>
+                  </div>
+                  <button class="ghost-button">★ Saved</button>
+                </div>
+              </div>
+              <div class="video-card">
+                <div class="video-thumb">
+                  <span>Video</span>
+                </div>
+                <div class="video-meta">
+                  <div>
+                    <p class="preview-title">Core focus flow</p>
+                    <p class="preview-sub">22 min · Core</p>
+                  </div>
+                  <button class="ghost-button">★ Saved</button>
+                </div>
+              </div>
+              <div class="video-card">
+                <div class="video-thumb">
+                  <span>Video</span>
+                </div>
+                <div class="video-meta">
+                  <div>
+                    <p class="preview-title">Mobility reset</p>
+                    <p class="preview-sub">18 min · Mobility</p>
+                  </div>
+                  <button class="ghost-button">★ Saved</button>
+                </div>
+              </div>
+            </div>
+            <button class="ghost-button full-width">Export Favorites</button>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
