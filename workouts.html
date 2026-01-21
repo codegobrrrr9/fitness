@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PulseFuel Workouts</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="top-bar">
+        <div class="logo">
+          <span class="logo-mark">PF</span>
+          <div>
+            <p class="logo-title">PulseFuel</p>
+            <p class="logo-subtitle">Nutrition + Workout Studio</p>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">Dashboard</a>
+          <a href="meals.html">Meals</a>
+          <a href="workouts.html" aria-current="page">Workouts</a>
+          <a href="favorites.html">Favorites</a>
+          <a href="#">Profile</a>
+        </nav>
+        <button class="ghost-button">Start Session</button>
+      </header>
+
+      <main class="content">
+        <section class="page-hero">
+          <div class="page-hero-copy">
+            <p class="eyebrow">Workouts</p>
+            <h1>Train by body part with curated sessions.</h1>
+            <p class="hero-description">
+              Select a focus area to reveal suggested videos and routines. Save
+              your favorites for quick access.
+            </p>
+            <div class="hero-actions">
+              <button class="primary-button">Browse All</button>
+              <a class="secondary-button" href="favorites.html">View Favorites</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="hero-card-top">
+              <p class="card-title">Weekly Activity</p>
+              <span class="status-pill">4 workouts</span>
+            </div>
+            <div class="summary-grid">
+              <div>
+                <p class="summary-label">Focus Areas</p>
+                <p class="summary-value">5</p>
+              </div>
+              <div>
+                <p class="summary-label">Avg Duration</p>
+                <p class="summary-value">38m</p>
+              </div>
+              <div>
+                <p class="summary-label">Favorites</p>
+                <p class="summary-value">12</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="grid-section workouts-grid">
+          <div class="card">
+            <div class="card-header">
+              <h2>Body part focus</h2>
+              <p>Tap a focus to load suggested workouts.</p>
+            </div>
+            <div class="muscle-grid">
+              <button class="muscle-item">Chest</button>
+              <button class="muscle-item">Back</button>
+              <button class="muscle-item">Legs</button>
+              <button class="muscle-item">Shoulders</button>
+              <button class="muscle-item">Arms</button>
+              <button class="muscle-item">Core</button>
+              <button class="muscle-item">Glutes</button>
+              <button class="muscle-item">Mobility</button>
+            </div>
+            <div class="focus-highlight">
+              <div>
+                <p class="workout-title">Selected: Upper Body</p>
+                <p class="workout-sub">12 videos · 3 collections</p>
+              </div>
+              <button class="secondary-button">See All</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h2>Suggested videos</h2>
+              <p>Recommended sessions for your selected focus.</p>
+            </div>
+            <div class="video-grid">
+              <div class="video-card">
+                <div class="video-thumb">
+                  <span>Video</span>
+                </div>
+                <div class="video-meta">
+                  <div>
+                    <p class="preview-title">Upper body burner</p>
+                    <p class="preview-sub">28 min · Strength</p>
+                  </div>
+                  <button class="ghost-button">☆ Favorite</button>
+                </div>
+              </div>
+              <div class="video-card">
+                <div class="video-thumb">
+                  <span>Video</span>
+                </div>
+                <div class="video-meta">
+                  <div>
+                    <p class="preview-title">Back &amp; posture reset</p>
+                    <p class="preview-sub">18 min · Mobility</p>
+                  </div>
+                  <button class="ghost-button">☆ Favorite</button>
+                </div>
+              </div>
+              <div class="video-card">
+                <div class="video-thumb">
+                  <span>Video</span>
+                </div>
+                <div class="video-meta">
+                  <div>
+                    <p class="preview-title">Core focus flow</p>
+                    <p class="preview-sub">22 min · Core</p>
+                  </div>
+                  <button class="ghost-button">☆ Favorite</button>
+                </div>
+              </div>
+              <div class="video-card">
+                <div class="video-thumb">
+                  <span>Video</span>
+                </div>
+                <div class="video-meta">
+                  <div>
+                    <p class="preview-title">Shoulder strength</p>
+                    <p class="preview-sub">30 min · Strength</p>
+                  </div>
+                  <button class="ghost-button">☆ Favorite</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
