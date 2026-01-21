@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PulseFuel Profile</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="top-bar">
+        <div class="logo">
+          <span class="logo-mark">PF</span>
+          <div>
+            <p class="logo-title">PulseFuel</p>
+            <p class="logo-subtitle">Nutrition + Workout Studio</p>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">Dashboard</a>
+          <a href="meals.html">Meals</a>
+          <a href="workouts.html">Workouts</a>
+          <a href="favorites.html">Favorites</a>
+          <a href="profile.html" aria-current="page">Profile</a>
+        </nav>
+        <button class="ghost-button">Edit Profile</button>
+      </header>
+
+      <main class="content">
+        <section class="page-hero">
+          <div class="page-hero-copy">
+            <p class="eyebrow">Profile</p>
+            <h1>Your nutrition and training settings.</h1>
+            <p class="hero-description">
+              Update daily targets, sync devices, and personalize your training
+              preferences.
+            </p>
+            <div class="hero-actions">
+              <button class="primary-button">Update Goals</button>
+              <button class="secondary-button">Manage Devices</button>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="hero-card-top">
+              <p class="card-title">Member Status</p>
+              <span class="status-pill">Active</span>
+            </div>
+            <div class="summary-grid">
+              <div>
+                <p class="summary-label">Streak</p>
+                <p class="summary-value">12 days</p>
+              </div>
+              <div>
+                <p class="summary-label">Goal</p>
+                <p class="summary-value">Lean Mass</p>
+              </div>
+              <div>
+                <p class="summary-label">Preferences</p>
+                <p class="summary-value">Strength</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="grid-section">
+          <div class="card">
+            <div class="card-header">
+              <h2>Daily targets</h2>
+              <p>Calories, macros, and hydration preferences.</p>
+            </div>
+            <div class="macro-list">
+              <div class="macro-item">
+                <div>
+                  <p class="macro-title">Calories</p>
+                  <p class="macro-sub">2,050 kcal</p>
+                </div>
+                <span class="macro-chip">Maintain</span>
+              </div>
+              <div class="macro-item">
+                <div>
+                  <p class="macro-title">Protein</p>
+                  <p class="macro-sub">140 g</p>
+                </div>
+                <span class="macro-chip">High</span>
+              </div>
+              <div class="macro-item">
+                <div>
+                  <p class="macro-title">Carbs</p>
+                  <p class="macro-sub">210 g</p>
+                </div>
+                <span class="macro-chip">Balanced</span>
+              </div>
+              <div class="macro-item">
+                <div>
+                  <p class="macro-title">Hydration</p>
+                  <p class="macro-sub">2.7 L</p>
+                </div>
+                <span class="macro-chip">Daily</span>
+              </div>
+            </div>
+            <button class="ghost-button full-width">Adjust Targets</button>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h2>Preferences</h2>
+              <p>Keep your feed aligned with your goals.</p>
+            </div>
+            <div class="nutrient-list">
+              <div class="nutrient-row">
+                <span>Workout intensity</span>
+                <span class="nutrient-pill">Moderate</span>
+              </div>
+              <div class="nutrient-row">
+                <span>Suggested meals</span>
+                <span class="nutrient-pill">High Protein</span>
+              </div>
+              <div class="nutrient-row">
+                <span>Dietary focus</span>
+                <span class="nutrient-pill">Low Sugar</span>
+              </div>
+              <div class="nutrient-row">
+                <span>Notifications</span>
+                <span class="nutrient-pill">Enabled</span>
+              </div>
+            </div>
+            <button class="ghost-button full-width">Update Preferences</button>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
